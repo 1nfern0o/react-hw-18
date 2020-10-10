@@ -7,7 +7,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Router>
+                <Router basename="/react-hw-18/">
                     <Switch>
                         <Route exact path="/" render={() => <Redirect to="/login" />} />
                         <Route exact path="/login" component={SingIn}/>
